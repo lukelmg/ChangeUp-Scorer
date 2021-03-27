@@ -24,6 +24,10 @@ const goalLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
     document.body.appendChild(goal);
   }
 
+const scoreOutput = document.createElement('h1');
+scoreOutput.id = 'scoreOutput';
+scoreOutput.innerHTML = '63';
+
 const red = document.createElement('button');
 red.id = 'red';
 red.innerHTML = 'Red'
@@ -39,6 +43,7 @@ erase.innerHTML = 'Erase'
 document.body.appendChild(red);
 document.body.appendChild(blue);
 document.body.appendChild(erase);
+document.body.appendChild(scoreOutput);
 
 
 red.addEventListener("click", function() {
@@ -50,7 +55,7 @@ red.addEventListener("click", function() {
     red.style.backgroundColor = redColor;
     red.style.color = 'white';
     blue.style.backgroundColor = 'transparent';
-    blue.style.color = 'black';
+    blue.style.color = '#1e1e1e';
     redState = true;
     blueState = false;
   }
@@ -65,7 +70,7 @@ blue.addEventListener("click", function() {
     blue.style.backgroundColor = blueColor;
     blue.style.color = 'white';
     red.style.backgroundColor = 'transparent';
-    red.style.color = 'black';
+    red.style.color = '#1e1e1e';
     blueState = true;
     redState = false;
   }

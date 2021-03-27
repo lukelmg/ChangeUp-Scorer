@@ -1,5 +1,8 @@
 var finalScore = 0;
 
+var redArray = [];
+var blueArray = [];
+
 function score(id) {
   finalScore = 0;
   var current = document.getElementById(id);
@@ -24,5 +27,5 @@ function score(id) {
     }
   }
   finalScore += 63;
-  console.log(finalScore);
+  document.getElementById('scoreOutput').innerHTML = finalScore;
 }
