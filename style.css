@@ -1,0 +1,46 @@
+body {
+  background-color: #ededed;
+}
+
+div, button {
+  -ms-touch-action: manipulation;	/* IE10  */
+	touch-action: manipulation;		/* IE11+ */
+  -webkit-tap-highlight-color: transparent;
+}
+
+.goal {
+  background-color:gray;
+  height:30vw;
+  width:30vw;
+  display:inline-block;
+}
+
+.ballslot {
+  height:7vw;
+  width:7vw;
+  background-color:white;
+  margin:1vh;
+  border-radius: 50%;
+}
+
+.ballslot:hover, button {
+  cursor: pointer;
+}
+
+button {
+  height: 15vw;
+  width: 25vw;
+  margin-left:1vw;
+  margin-right:5vw;
+  border-radius: 30px;
+  border: none;
+  font-family: Arial;
+  font-size: 5vw;
+  font-weight: bold;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5vw;
+}
+
+button:focus {
+  outline:none;
+}
