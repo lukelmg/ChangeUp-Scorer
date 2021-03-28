@@ -5,6 +5,7 @@ var redState = false,
 const redColor = '#fc0349';
 const blueColor = '#038cfc';
 
+function no() {}
 
 const position = ['top', 'middle', 'bottom'];
 const goalLabels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
